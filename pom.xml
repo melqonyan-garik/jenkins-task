@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-hibernate</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-hibernate</name>
 	<description>Demo project for Spring Boot</description>
@@ -63,26 +64,19 @@
 					</excludes>
 				</configuration>
 			</plugin>
-
 <!--			<plugin>-->
-<!--				<groupId>org.jacoco</groupId>-->
-<!--				<artifactId>jacoco-maven-plugin</artifactId>-->
-<!--				<version>0.8.6</version>-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<goals>-->
-<!--							<goal>prepare-agent</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--					<execution>-->
-<!--						<id>report</id>-->
-<!--						<phase>prepare-package</phase>-->
-<!--						<goals>-->
-<!--							<goal>report</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-war-plugin</artifactId>-->
+<!--				<version>3.0.0</version>-->
+<!--				<configuration>-->
+<!--					<attachClasses>true</attachClasses>-->
+<!--				</configuration>-->
+
 <!--			</plugin>-->
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.4.0</version>
+			</plugin>
 		</plugins>
 	</build>
 
